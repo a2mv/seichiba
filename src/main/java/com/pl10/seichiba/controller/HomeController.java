@@ -40,9 +40,15 @@ public class HomeController {
         model.addObject("productos", productoModels);
         model.addObject("page",pageRender);
         LOG.info("RETURNING: index --OBJECTS "+model);
-        LOG.info("RETURNING TEST: index --OBJECTS "+pageRender);
         return model;
     }
 
+    @GetMapping("/articulo")
+    public ModelAndView articulo(){
+        LOG.info("METHOD: articulo()");
+        ModelAndView model = new ModelAndView("articulo");
+        model.addObject("titlePage", "La Vitrina");
+        return model;
+    }
 
 }

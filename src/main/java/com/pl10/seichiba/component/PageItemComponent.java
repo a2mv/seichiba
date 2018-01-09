@@ -17,4 +17,12 @@ public class PageItemComponent {
     public boolean isActual() {
         return actual;
     }
+
+    @Override
+    public String toString() {
+        return "PageItemComponent{" +
+                "numero=" + numero +
+                ", actual=" + actual +
+                '}';
+    }
 }

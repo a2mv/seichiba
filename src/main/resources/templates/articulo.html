@@ -1,0 +1,56 @@
+<!doctype html>
+<html class="no-js" lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:include="fragment/_header :: headerFragment"></head>
+<body>
+<header>
+    <div th:include="fragment/_header :: navbar-oneFragment"></div>
+    <div th:include="fragment/_header :: midFragment"></div>
+    <!-- <div th:include="fragment/_header :: navbar-twoFragment"></div> -->
+    <!-- <div th:include="fragment/_header :: sliderFragment"></div> -->
+    <div th:include="fragment/_header :: noticeFragment"></div>
+</header>
+<main>
+    <div class="container">
+        <div class="row name-producto">
+            <div class="col">
+                <hr class="division-1"/>
+            </div>
+            <div class="col"><h2 class="centrar-texto"><strong></strong></h2></div>
+            <div class="col">
+                <hr class="division-2"/>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class=" col-sm-12 col-md-8">
+                imagen
+            </div>
+            <div class=" col-sm-12 col-md-4">
+                <h4>Computador de Mesa Acer Es1-432-p2m5 2,4 Gz Intel 4g 500g</h4>
+                <h3><strong>$ 1'254.000</strong></h3>
+                <br/>
+                <a href="/#"><span class="">Nombre corto de la Empresa</span></a>
+                <p><small class="text-danger"><i class="fa fa-truck"></i> Envío disponible ($ 0.0)</small></p>
+                <p><small>REF: <span class="text-info">NUMEROREFARTICULO</span></small></p>
+                <p>
+                <small class="mx-sm-3">Cantidad</small>
+                <form class="form-inline">
+                    <div class="form-group mx-sm-3 mb-2">
+                        <input value="1" type="number" class="form-control" id="inputCantidad"/>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2">Pedir</button>
+                </form>
+                </p>
+                <p><small><i class="fa fa-hand-o-right"></i> Otro detalle que este olvidando</small></p>
+                <br/>
+                <small><p>frase legal con respecto a los pagos que nos libera mientras montamos la plataforma de cobro</p></small>
+            </div>
+        </div>
+    </div>
+</main>
+<footer th:include="fragment/_footer :: footerFragment"></footer>
+<div th:include="fragment/_footer :: scriptFragment"></div>
+</body>
+</html>
