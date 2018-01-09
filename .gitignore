@@ -1,7 +1,7 @@
 target/
-src/main/resources/application.yml
 src/main/resources/static/node_modules
 src/main/resources/static/package-lock.json
+src/main/resources/static/.sass-cache/
 
 
 ### IntelliJ IDEA ###
