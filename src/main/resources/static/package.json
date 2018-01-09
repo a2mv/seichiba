@@ -1,0 +1,15 @@
+{
+  "name": "web-pl10",
+  "version": "1.0.0",
+  "description": "Pagina web de soluciones pl10",
+  "main": "index.html",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alvaro Monsalve",
+  "license": "ISC",
+  "dependencies": {}
+}

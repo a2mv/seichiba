@@ -1,0 +1,130 @@
+
+html {
+  font-family: 'Ubuntu', sans-serif;
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-color: $white-bis;
+  margin-bottom: 60px; /* Margin bottom by footer height */
+
+  .centrar-texto {
+    text-align: center;
+  }
+  header {
+    .header-mid {
+      .image-logo {
+        padding-top: 5px;
+        height: 60px;
+        padding-bottom: 5px;
+      }
+      .col-mid {
+
+        text-align: center;
+      }
+    }
+    .header-navbar-two {
+      background-color: #222222;
+      padding-top: 5px;
+      nav {
+        background-color: $red-dark;
+      }
+    }
+
+    .notice-bar {
+      height: 60px;
+      background-color: white;
+      div {
+        height: 100%;
+        .metod-pago {
+          height: 40px;
+        }
+      }
+    ;
+    }
+  }
+
+  main {
+    .container {
+
+      .name-producto {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+
+      .productos {
+        .card{
+          margin-bottom: 1rem;
+          .image-producto {
+            width: 100%;
+          }
+          .card-title {
+            font-size: 0.90rem;
+          }
+        }
+
+
+
+
+      }
+    }
+
+    .division-1 {
+      border: 0;
+      height: 1px;
+      background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #727272);
+      background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #727272);
+      background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #727272);
+      background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #727272);
+    }
+    .division-2 {
+      border: 0;
+      height: 1px;
+      background-image: -webkit-linear-gradient(left, #727272, #8c8b8b, #f0f0f0);
+      background-image: -moz-linear-gradient(left, #727272, #8c8b8b, #f0f0f0);
+      background-image: -ms-linear-gradient(left, #727272, #8c8b8b, #f0f0f0);
+      background-image: -o-linear-gradient(left, #727272, #8c8b8b, #f0f0f0);
+    }
+
+    .star-color {
+      color: red;
+    }
+
+    .price-color-discount {
+      color: grey;
+    }
+
+    .card-deck {
+      a:hover {
+        text-decoration: none;
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+    padding-bottom: 3rem;
+  }
+
+  footer {
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Set the fixed height of the footer here */
+    line-height: 60px; /* Vertically center the text there */
+    background-color: #f5f5f5;
+    .container {
+      width: auto;
+      max-width: 680px;
+      padding: 0 15px;
+    }
+  }
+
+}
+
+
+
+
+
+
