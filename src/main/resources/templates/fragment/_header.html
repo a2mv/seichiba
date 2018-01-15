@@ -11,8 +11,8 @@
     <meta name="description" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
-    <link rel="manifest" th:href="@{site.webmanifest}"/>
-    <link rel="apple-touch-icon" th:href="@{icon.png}"/>
+    <link rel="manifest" th:href="@{/site.webmanifest}"/>
+    <link rel="apple-touch-icon" th:href="@{/icon.png}"/>
     <!-- Place favicon.ico in the root directory -->
     <!--  Normalize css -->
     <link rel="stylesheet" th:href="@{/css/normalize.css}"/>
@@ -27,8 +27,15 @@
     <link rel="stylesheet" th:href="@{/css/hover/hover-min.css}"/>
 
 
-    <link rel="stylesheet" th:href="@{css/main.css}"/>
-    <link rel="stylesheet" th:href="@{css/app.css}"/>
+    <link rel="stylesheet" th:href="@{/css/main.css}"/>
+    <link rel="stylesheet" th:href="@{/css/app.css}"/>
+
+
+    <link rel="stylesheet" th:href="@{/node_modules/lightbox2/dist/css/lightbox.min.css}" />
+
+    <style>
+        .borde{border: 1px #000 solid; }
+    </style>
 
 </head>
 
@@ -49,17 +56,17 @@
                 <div class="collapse navbar-collapse" id="navbarOne">
                     <ul class="nav navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link py-1" href="#">
+                            <a class="nav-link py-1" th:href="@{/quienes-somos}">
                                 <small>Quienes somos</small>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link py-1" href="#">
+                            <a class="nav-link py-1" th:href="@{/precios}">
                                 <small>Precios</small>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link py-1" href="#">
+                            <a class="nav-link py-1" th:href="@{/contacto}">
                                 <small>Contacto</small>
                             </a>
                         </li>
@@ -69,7 +76,6 @@
                         <li class="nav-item"><a href="" class="nav-link py-1"><i class="fa fa-twitter"></i></a></li>
                         <li class="nav-item"><a href="" class="nav-link py-1"><i class="fa fa-instagram"></i></a></li>
                     </ul>
-
                 </div>
             </div>
         </nav>
@@ -81,7 +87,9 @@
     <div class="header-mid">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-sm-12 col-md-3 col-mid"><img class="image-logo" src="img/logo-blanco.png" alt="imagen logo"/></div>
+                <div class="col-sm-12 col-md-3 col-mid">
+                    <a th:href="@{/}"><img class="image-logo " th:src="@{/img/logo-blanco.png}" alt="imagen logo"/></a>
+                </div>
                 <div class="col-sm-8 col-md-6 col-mid">
                     <div class="input-group">
                         <input type="text" class="form-control select" placeholder="Search for..."
@@ -91,7 +99,18 @@
                         </span>
                     </div>
                 </div>
-                <div class="col-sm-4 col-md-3 col-mid"><a href="#">login</a> | <a href="#"><i class="fa fa-shopping-cart"></i></a></div>
+                <div class="nav-user col-sm-4 col-md-3 col-mid d-flex align-items-center align-items-stretch justify-content-center">
+                    <a class="d-flex align-items-center mx-2 text-danger" href="#"> <small><strong>Regístrate</strong></small> </a>
+                    <span class="border border-danger border-left-0 my-1"></span>
+                    <a class="d-flex align-items-center mx-2 text-danger" href="#"> <small><strong>Ingresa</strong></small> </a>
+                    <span class="border border-danger border-left-0 my-1"></span>
+                    <a class="d-flex align-items-center mx-2 text-danger" href="#"> <small><strong>Ayuda</strong></small> </a>
+                </div>
+                <!-- <div class="col-sm-4 col-md-3 col-mid">
+                    <a href="#">Regístrate</a> | <a href="#">Ingresa</a> | <a href="#">
+                    <i class="fa fa-shopping-cart"></i></a>
+                </div> -->
+
             </div>
         </div>
     </div>
@@ -109,11 +128,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Link 2</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Link 3</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Link 4</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Link 5</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Tecnología</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Moda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Comidas rápidas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Repostería</a></li>
                     </ul>
                 </div>
             </div>
@@ -132,7 +150,7 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="img/slide1.jpg" alt="First slide"/>
+                    <img class="d-block w-100" th:src="@{/img/slide1.jpg}" alt="First slide"/>
                     <!--<div class="carousel-caption d-none d-md-block">
                         <h3>Slide 1</h3>
                         <p>adipiscing elit. Sed quis vestibulum quam. Etiam dui arcu, hendrerit at erat at adipiscing
@@ -140,7 +158,7 @@
                     </div>-->
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="img/slide2.jpg" alt="Second slide"/>
+                    <img class="d-block w-100" th:src="@{/img/slide2.jpg}" alt="Second slide"/>
                     <!--<div class="carousel-caption d-none d-md-block">
                         <h3>Slide 2</h3>
                         <p>adipiscing elit. Sed quis vestibulum quam. Etiam dui arcu, hendrerit at erat at adipiscing
@@ -148,7 +166,7 @@
                     </div>-->
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="img/slide3.jpg" alt="Third slide"/>
+                    <img class="d-block w-100" th:src="@{/img/slide3.jpg}" alt="Third slide"/>
                     <!--<div class="carousel-caption d-none d-md-block">
                         <h3>Slide 2</h3>
                         <p>adipiscing elit. Sed quis vestibulum quam. Etiam dui arcu, hendrerit at erat at adipiscing
@@ -174,7 +192,7 @@
         <div class="container">
             <div class="row align-items-center d-flex justify-content-center">
                 <strong>¡Todos los productos en un solo lugar!</strong>&nbsp;&nbsp;
-                <img class="metod-pago" src="img/Metodos-Pago.png" alt="métodos de pago"/>
+                <img class="metod-pago" th:src="@{/img/Metodos-Pago.png}" alt="métodos de pago"/>
             </div>
         </div>
     </div>

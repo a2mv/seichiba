@@ -25,32 +25,84 @@
 
         <div class="row">
             <div class=" col-sm-12 col-md-8">
-                imagen
+                <div class="row">
+                    <div class="col-sm-3 d-none d-sm-block align-self-center">
+                        <article class="pb-2">
+                            <a th:href="@{/img/producto2.jpg}" data-lightbox="galeria-1" data-title="Regala"><img
+                                    th:src="@{/img/producto2.jpg}" alt="Regala" class="img-thumbnail"/></a>
+                        </article>
+                        <article class="pb-2">
+                            <a th:href="@{/img/producto2.jpg}" data-lightbox="galeria-1" data-title="Regala"><img
+                                    th:src="@{/img/producto2.jpg}" alt="Regala" class="img-thumbnail"/></a>
+                        </article>
+                        <article class="pb-2">
+                            <a th:href="@{/img/producto2.jpg}" data-lightbox="galeria-1" data-title="Regala"><img
+                                    th:src="@{/img/producto2.jpg}" alt="Regala" class="img-thumbnail"/></a>
+                        </article>
+
+                    </div>
+                    <div class="col-sm-9">
+                        <img class="w-100  img-thumbnail" th:src="@{'/uploads/'+${producto.imageFilename}}"
+                             th:alt="${producto.imageFilename}"/>
+                    </div>
+                    <div class="col-sm-3 d-block d-sm-none">
+
+                            <article class="">
+                                <a href="img/producto2.jpg" data-lightbox="galeria-2" data-title="Regala"><img
+                                        src="img/producto2.jpg" alt="Regala" class="img-thumbnail"/></a>
+                            </article>
+                            <article >
+                                <a href="img/producto2.jpg" data-lightbox="galeria-2" data-title="Regala"><img
+                                        src="img/producto2.jpg" alt="Regala" class="img-thumbnail"/></a>
+                            </article>
+                            <article >
+                                <a href="img/producto2.jpg" data-lightbox="galeria-2" data-title="Regala"><img
+                                        src="img/producto2.jpg" alt="Regala" class="img-thumbnail"/></a>
+                            </article>
+
+
+                    </div>
+                </div>
             </div>
             <div class=" col-sm-12 col-md-4">
-                <h4>Computador de Mesa Acer Es1-432-p2m5 2,4 Gz Intel 4g 500g</h4>
-                <h3><strong>$ 1'254.000</strong></h3>
+                <h4 th:text="${producto.descripcion}"></h4>
+                <h3><strong>$ <span th:text="${producto.precio}"></span></strong></h3>
                 <br/>
-                <a href="/#"><span class="">Nombre corto de la Empresa</span></a>
-                <p><small class="text-danger"><i class="fa fa-truck"></i> Envío disponible ($ 0.0)</small></p>
-                <p><small>REF: <span class="text-info">NUMEROREFARTICULO</span></small></p>
+                <a href="/#"><span th:text="${producto.empresaModel.razonSocial}"></span></a>
                 <p>
-                <small class="mx-sm-3">Cantidad</small>
-                <form class="form-inline">
+                    <small class="text-danger"><i class="fa fa-truck"></i> Envío disponible ($ 0.0)</small>
+                </p>
+                <p>
+                    <small>REF: <span class="text-info" th:text="${producto.referencia}"></span></small>
+                </p>
+                <p>
+                    <small class="mx-sm-3">Cantidad</small>
+                <div class="form-inline">
                     <div class="form-group mx-sm-3 mb-2">
                         <input value="1" type="number" class="form-control" id="inputCantidad"/>
                     </div>
                     <button type="submit" class="btn btn-primary mb-2">Pedir</button>
-                </form>
+                </div>
                 </p>
-                <p><small><i class="fa fa-hand-o-right"></i> Otro detalle que este olvidando</small></p>
+                <p>
+                    <small><i class="fa fa-hand-o-right"></i> Otro detalle que este olvidando</small>
+                </p>
                 <br/>
-                <small><p>frase legal con respecto a los pagos que nos libera mientras montamos la plataforma de cobro</p></small>
+                <small><p>Frase legal con respecto a los pagos que nos libera mientras montamos la plataforma de
+                    cobro</p></small>
             </div>
         </div>
     </div>
 </main>
 <footer th:include="fragment/_footer :: footerFragment"></footer>
 <div th:include="fragment/_footer :: scriptFragment"></div>
+
+<script th:src="@{/node_modules/lightbox2/dist/js/lightbox.min.js}"></script>
+<script>
+    lightbox.option({
+        'albumLabel': "Imagen %1 de %2"
+    })
+</script>
+
 </body>
 </html>

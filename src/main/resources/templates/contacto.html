@@ -1,0 +1,72 @@
+<!doctype html>
+<html class="no-js" lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:include="fragment/_header :: headerFragment"></head>
+<body>
+<header>
+    <div th:include="fragment/_header :: navbar-oneFragment"></div>
+    <div th:include="fragment/_header :: midFragment"></div>
+    <!-- <div th:include="fragment/_header :: navbar-twoFragment"></div> -->
+    <!-- <div th:include="fragment/_header :: sliderFragment"></div> -->
+    <div th:include="fragment/_header :: noticeFragment"></div>
+</header>
+<main>
+    <div class="container">
+        <div class="row name-producto">
+            <div class="col">
+                <hr class="division-1"/>
+            </div>
+            <div class="col"><h2 class="centrar-texto"><strong>Contáctanos</strong></h2></div>
+            <div class="col">
+                <hr class="division-2"/>
+            </div>
+        </div>
+        <div class="contacto-container d-flex justify-content-center">
+            <div class="row">
+                <div class="form-box ">
+                    <div class="form-top">
+                        <div class="form-top-left">
+                            <h3></h3>
+                            <p>Rellene el siguiente formulario para enviarnos un mensaje:</p>
+                        </div>
+                        <div class="form-top-right">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                    </div>
+                    <div class="form-bottom contact-form">
+                        <form role="form" action="#" method="post">
+                            <div class="form-group">
+                                <label class="sr-only" for="contact-name">Nombre</label>
+                                <input type="text" name="name" placeholder="Nombre..." class="contact-name form-control"
+                                       id="contact-name"/>
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="contact-email">Correo</label>
+                                <input type="text" name="email" placeholder="Correo..."
+                                       class="contact-email form-control" id="contact-email"/>
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="contact-subject">Asunto</label>
+                                <input type="text" name="subject" placeholder="Asunto..."
+                                       class="contact-subject form-control" id="contact-subject"/>
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="contact-message">Mensaje</label>
+                                <textarea name="message" placeholder="Mensaje..." class="contact-message form-control"
+                                          id="contact-message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer th:include="fragment/_footer :: footerFragment"></footer>
+<div th:include="fragment/_footer :: scriptFragment"></div>
+
+
+</body>
+</html>

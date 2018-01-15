@@ -41,4 +41,14 @@ public class ProductoServiceImpl implements ProductoService {
         Page<ProductoModel> pageProductoModels = new PageImpl<>(productoModels,pageable,productos.getTotalElements());
         return pageProductoModels;
     }
+
+    @Override
+    public Producto findProducto(String id) {
+        return productoRepository.findById(id);
+    }
+
+    @Override
+    public ProductoModel findProductoModel(String id) {
+        return productoConverter.productoToProductoModel(findProducto(id));
+    }
 }

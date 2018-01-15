@@ -43,11 +43,30 @@ public class HomeController {
         return model;
     }
 
-    @GetMapping("/articulo")
-    public ModelAndView articulo(){
-        LOG.info("METHOD: articulo()");
-        ModelAndView model = new ModelAndView("articulo");
-        model.addObject("titlePage", "La Vitrina");
+    @GetMapping("/quienes-somos")
+    public ModelAndView quienesSomos() {
+        LOG.info("METHOD: quienesSomos()");
+        ModelAndView model = new ModelAndView("quienessomos");
+        model.addObject("titlePage", "La Vitrina | Quienes Somos");
+        LOG.info("RETURNING: index --OBJECTS "+model);
+        return model;
+    }
+
+    @GetMapping("/precios")
+    public ModelAndView precios() {
+        LOG.info("METHOD: precios()");
+        ModelAndView model = new ModelAndView("precio");
+        model.addObject("titlePage", "La Vitrina | Precios");
+        LOG.info("RETURNING: index --OBJECTS "+model);
+        return model;
+    }
+
+    @GetMapping("/contacto")
+    public ModelAndView contacto() {
+        LOG.info("METHOD: contacto()");
+        ModelAndView model = new ModelAndView("contacto");
+        model.addObject("titlePage", "La Vitrina | Contacto");
+        LOG.info("RETURNING: index --OBJECTS "+model);
         return model;
     }
 

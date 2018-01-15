@@ -1,0 +1,54 @@
+<!doctype html>
+<html class="no-js" lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:include="fragment/_header :: headerFragment"></head>
+<body>
+<header>
+    <div th:include="fragment/_header :: navbar-oneFragment"></div>
+    <div th:include="fragment/_header :: midFragment"></div>
+    <!-- <div th:include="fragment/_header :: navbar-twoFragment"></div> -->
+    <!-- <div th:include="fragment/_header :: sliderFragment"></div> -->
+    <div th:include="fragment/_header :: noticeFragment"></div>
+</header>
+<main>
+    <div class="container">
+        <div class="row name-producto">
+            <div class="col">
+                <hr class="division-1"/>
+            </div>
+            <div class="col"><h2 class="centrar-texto"><strong>Quienes Somos</strong></h2></div>
+            <div class="col">
+                <hr class="division-2"/>
+            </div>
+        </div>
+        <p class="text-justify">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium eu lorem et lobortis. Nulla
+            dictum leo sed enim lobortis posuere. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            Phasellus et egestas magna. Curabitur eget mauris finibus, venenatis justo eu, dapibus magna. Integer mattis
+            tempus interdum. Maecenas ac hendrerit ante, eu cursus odio.
+        </p>
+        <p class="text-justify">
+            Pellentesque facilisis bibendum orci id gravida. Etiam sollicitudin enim diam, ut fermentum lacus porttitor
+            quis. Praesent sed massa at massa ultricies gravida quis eu orci. Nullam eu purus lacus. Praesent bibendum,
+            nulla vitae feugiat tincidunt, mi erat viverra nisl, nec vehicula nunc lectus at enim. Suspendisse leo
+            tortor, vestibulum sed turpis fringilla, cursus auctor enim. Nunc varius porttitor ante. Proin eu nunc ac
+            nibh viverra ultricies.
+        </p>
+        <p class="text-justify">
+            Proin tempor, metus at iaculis laoreet, sapien lacus lacinia turpis, a consequat massa felis ut ex. Cras
+            gravida felis quis sollicitudin lacinia. Fusce ut lorem ultricies, gravida eros eget, cursus turpis. Ut
+            fringilla justo nisi, nec egestas justo rutrum sit amet. Suspendisse vitae nulla sollicitudin, porta augue
+            id, euismod massa. Aliquam bibendum bibendum ipsum id convallis. Donec faucibus arcu nisi, non interdum
+            nulla ullamcorper ut. Nulla vitae turpis tortor. Phasellus dictum, eros ut fermentum condimentum, eros elit
+            tristique enim, ac vehicula elit metus id augue.
+        </p>
+
+    </div>
+</main>
+<footer th:include="fragment/_footer :: footerFragment"></footer>
+<div th:include="fragment/_footer :: scriptFragment"></div>
+
+
+</body>
+</html>

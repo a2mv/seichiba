@@ -1,3 +1,363 @@
+.precio-container .btn-custom {
+  color: #bdc3c7;
+  font-size: 18px;
+  border: 1px solid #bdc3c7; }
+.precio-container .btn-custom:hover {
+  color: #ffffff;
+  border: 1px solid #ffffff; }
+.precio-container #pricing-table {
+  padding-top: 50px; }
+  .precio-container #pricing-table .pricing {
+    marign: 0;
+    padding: 0; }
+    .precio-container #pricing-table .pricing .pricing-table {
+      padding-bottom: 30px; }
+      .precio-container #pricing-table .pricing .pricing-table .pricing-header {
+        position: relative;
+        background: #7f0000;
+        padding: 22px 22px;
+        text-align: center;
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px; }
+        .precio-container #pricing-table .pricing .pricing-table .pricing-header .pricing-title {
+          color: #ffffff;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          font-size: 24px;
+          text-align: center;
+          font-weight: 700; }
+        .precio-container #pricing-table .pricing .pricing-table .pricing-header .pricing-rate {
+          font-size: 70px;
+          font-weight: 700;
+          color: #ffffff;
+          position: relative;
+          text-align: center; }
+          .precio-container #pricing-table .pricing .pricing-table .pricing-header .pricing-rate sup {
+            font-size: 24px;
+            position: relative;
+            top: -30px;
+            color: #bdc3c7; }
+          .precio-container #pricing-table .pricing .pricing-table .pricing-header .pricing-rate span {
+            font-size: 16px;
+            color: #bdc3c7;
+            text-transform: uppercase; }
+    .precio-container #pricing-table .pricing .pricing-list {
+      padding: 20px 0 40px 0;
+      background: #ffffff;
+      border: 1px solid #e3e3e3; }
+      .precio-container #pricing-table .pricing .pricing-list ul {
+        padding: 0px;
+        display: table;
+        margin: 0px auto; }
+        .precio-container #pricing-table .pricing .pricing-list ul li {
+          list-style: none;
+          border-bottom: 1px solid #EAECEB;
+          color: #bdc3c7;
+          font-size: 16px;
+          line-height: 42px; }
+          .precio-container #pricing-table .pricing .pricing-list ul li i {
+            margin-right: 12px;
+            color: #bdc3c7; }
+          .precio-container #pricing-table .pricing .pricing-list ul li span {
+            color: #7f0000; }
+        .precio-container #pricing-table .pricing .pricing-list ul li:last-child {
+          border: none; }
+
+.contacto-container {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #888;
+  line-height: 30px;
+  text-align: center;
+  /***** Top menu *****/
+  /***** Top content *****/
+  /***** Media queries *****/ }
+  .contacto-container strong {
+    font-weight: 500; }
+  .contacto-container a, .contacto-container a:hover, .contacto-container a:focus {
+    color: #19b9e7;
+    text-decoration: none;
+    -o-transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s; }
+  .contacto-container h1, .contacto-container h2 {
+    margin-top: 10px;
+    font-size: 38px;
+    font-weight: 100;
+    color: #555;
+    line-height: 50px; }
+  .contacto-container h3 {
+    font-size: 22px;
+    font-weight: 300;
+    color: #555;
+    line-height: 30px; }
+  .contacto-container img {
+    max-width: 100%; }
+  .contacto-container ::-moz-selection {
+    background: #19b9e7;
+    color: #fff;
+    text-shadow: none; }
+  .contacto-container ::selection {
+    background: #19b9e7;
+    color: #fff;
+    text-shadow: none; }
+  .contacto-container .btn-link-1 {
+    display: inline-block;
+    height: 50px;
+    margin: 0 5px;
+    padding: 16px 20px 0 20px;
+    background: #19b9e7;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 16px;
+    color: #fff;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px; }
+  .contacto-container .btn-link-1:hover, .contacto-container .btn-link-1:focus, .contacto-container .btn-link-1:active {
+    outline: 0;
+    opacity: 0.6;
+    color: #fff; }
+  .contacto-container .btn-link-2 {
+    display: inline-block;
+    height: 50px;
+    margin: 0 5px;
+    padding: 15px 20px 0 20px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid #fff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 16px;
+    color: #fff;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px; }
+  .contacto-container .btn-link-2:hover, .contacto-container .btn-link-2:focus,
+  .contacto-container .btn-link-2:active, .contacto-container .btn-link-2:active:focus {
+    outline: 0;
+    opacity: 0.6;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff; }
+  .contacto-container .navbar {
+    padding-top: 10px;
+    background: #333;
+    background: rgba(51, 51, 51, 0.3);
+    border: 0;
+    -o-transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s; }
+  .contacto-container .navbar.navbar-no-bg {
+    background: none; }
+  .contacto-container ul.navbar-nav {
+    font-size: 16px;
+    color: #fff; }
+  .contacto-container .navbar-inverse ul.navbar-nav li {
+    padding-top: 8px;
+    padding-bottom: 8px; }
+  .contacto-container .navbar-inverse ul.navbar-nav li .li-text {
+    opacity: 0.8; }
+  .contacto-container .navbar-inverse ul.navbar-nav li a {
+    display: inline;
+    padding: 0;
+    color: #fff; }
+  .contacto-container .navbar-inverse ul.navbar-nav li a:hover {
+    color: #fff;
+    opacity: 1;
+    border-bottom: 1px dotted #fff; }
+  .contacto-container .navbar-inverse ul.navbar-nav li a:focus {
+    color: #fff;
+    outline: 0;
+    opacity: 1;
+    border-bottom: 1px dotted #fff; }
+  .contacto-container .navbar-inverse ul.navbar-nav li .li-social a {
+    margin: 0 5px;
+    font-size: 28px;
+    vertical-align: middle; }
+  .contacto-container .navbar-inverse ul.navbar-nav li .li-social a:hover,
+  .contacto-container .navbar-inverse ul.navbar-nav li .li-social a:focus {
+    border: 0;
+    color: #19b9e7; }
+  .contacto-container .navbar-brand {
+    width: 113px;
+    text-indent: -99999px; }
+  .contacto-container .inner-bg {
+    padding: 40px 0 170px 0; }
+  .contacto-container .top-content .text {
+    color: #fff; }
+  .contacto-container .top-content .text h1 {
+    color: #fff; }
+  .contacto-container .top-content .description {
+    margin: 20px 0 10px 0; }
+  .contacto-container .top-content .description p {
+    opacity: 0.8; }
+  .contacto-container .top-content .description a {
+    color: #fff; }
+  .contacto-container .top-content .description a:hover,
+  .contacto-container .top-content .description a:focus {
+    border-bottom: 1px dotted #fff; }
+  .contacto-container .top-content .top-big-link {
+    margin-top: 35px; }
+  .contacto-container .form-box {
+    padding-top: 40px; }
+  .contacto-container .form-top {
+    overflow: hidden;
+    padding: 0 25px 15px 25px;
+    background: #222222;
+    -moz-border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+    text-align: left; }
+  .contacto-container .form-top-left {
+    float: left;
+    width: 75%;
+    padding-top: 25px; }
+  .contacto-container .form-top-left h3 {
+    margin-top: 0;
+    color: #fff; }
+  .contacto-container .form-top-left p {
+    opacity: 0.8;
+    color: #fff; }
+  .contacto-container .form-top-right {
+    float: left;
+    width: 25%;
+    padding-top: 5px;
+    font-size: 66px;
+    color: #fff;
+    line-height: 100px;
+    text-align: right;
+    opacity: 0.3; }
+  .contacto-container .form-bottom {
+    padding: 25px 25px 30px 25px;
+    background: #444;
+    background: rgba(0, 0, 0, 0.3);
+    -moz-border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+    text-align: left; }
+  .contacto-container .form-bottom form textarea {
+    height: 100px; }
+  .contacto-container .form-bottom form .input-error {
+    border-color: #19b9e7; }
+  .contacto-container .form-bottom p {
+    opacity: 0.8;
+    color: #fff; }
+  @media (max-width: 767px) {
+    .contacto-container .navbar {
+      padding-top: 0; }
+    .contacto-container .navbar.navbar-no-bg {
+      background: #333;
+      background: rgba(51, 51, 51, 0.9); }
+    .contacto-container .navbar-brand {
+      height: 60px;
+      margin-left: 15px; }
+    .contacto-container .navbar-collapse {
+      border: 0; }
+    .contacto-container .navbar-toggle {
+      margin-top: 12px; }
+    .contacto-container .inner-bg {
+      padding: 40px 0 110px 0; }
+    .contacto-container .top-content .top-big-link {
+      margin-top: 25px; }
+    .contacto-container .top-content .top-big-link a.btn {
+      margin-top: 10px; } }
+  @media (max-width: 415px) {
+    .contacto-container h1, .contacto-container h2 {
+      font-size: 32px; } }
+  .contacto-container input[type="text"],
+  .contacto-container textarea,
+  .contacto-container textarea.form-control {
+    height: 50px;
+    margin: 0;
+    padding: 0 20px;
+    vertical-align: middle;
+    background: #fff;
+    border: 3px solid #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 50px;
+    color: #888;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -o-transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s; }
+  .contacto-container textarea,
+  .contacto-container textarea.form-control {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 30px; }
+  .contacto-container input[type="text"]:focus,
+  .contacto-container textarea:focus,
+  .contacto-container textarea.form-control:focus {
+    outline: 0;
+    background: #fff;
+    border: 3px solid #fff;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  .contacto-container input[type="text"]:-moz-placeholder, .contacto-container textarea:-moz-placeholder, .contacto-container textarea.form-control:-moz-placeholder {
+    color: #888; }
+  .contacto-container input[type="text"]:-ms-input-placeholder, .contacto-container textarea:-ms-input-placeholder, .contacto-container textarea.form-control:-ms-input-placeholder {
+    color: #888; }
+  .contacto-container input[type="text"]::-webkit-input-placeholder, .contacto-container textarea::-webkit-input-placeholder, .contacto-container textarea.form-control::-webkit-input-placeholder {
+    color: #888; }
+  .contacto-container button.btn {
+    height: 50px;
+    margin: 0;
+    padding: 0 20px;
+    vertical-align: middle;
+    background: #19b9e7;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 50px;
+    color: #fff;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    text-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -o-transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s; }
+  .contacto-container button.btn:hover {
+    opacity: 0.6;
+    color: #fff; }
+  .contacto-container button.btn:active {
+    outline: 0;
+    opacity: 0.6;
+    color: #fff;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  .contacto-container button.btn:focus {
+    outline: 0;
+    opacity: 0.6;
+    background: #19b9e7;
+    color: #fff; }
+  .contacto-container button.btn:active:focus, .contacto-container button.btn.active:focus {
+    outline: 0;
+    opacity: 0.6;
+    background: #19b9e7;
+    color: #fff; }
+
 html {
   font-family: 'Ubuntu', sans-serif;
   position: relative;
@@ -15,6 +375,8 @@ body {
     padding-bottom: 5px; }
   body header .header-mid .col-mid {
     text-align: center; }
+  body header .header-mid .nav-user {
+    height: 2.5rem; }
   body header .header-navbar-two {
     background-color: #222222;
     padding-top: 5px; }

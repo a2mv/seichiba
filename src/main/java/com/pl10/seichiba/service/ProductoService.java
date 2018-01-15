@@ -11,4 +11,8 @@ public interface ProductoService {
 
     public abstract Page<ProductoModel> findAllProductoModel(Pageable pageable);
 
+    public abstract Producto findProducto(String id);
+
+    public abstract ProductoModel findProductoModel(String id);
+
 }
